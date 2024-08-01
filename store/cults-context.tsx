@@ -5,12 +5,16 @@ import React, { createContext, useState } from "react";
 
 interface CultsContextInterface {
 	cults: DummyItem[] | [];
-	setInputCults: (inputCults: DummyItem[]) => void;
+	selectedCult: DummyItem | undefined;
+	setCults: (inputCults: DummyItem[]) => void;
+	setSelectedCult: (inputCults: DummyItem) => void;
 }
 
 const defaultContext: CultsContextInterface = {
 	cults: [],
-	setInputCults: () => {},
+	selectedCult: undefined,
+	setCults: () => {},
+	setSelectedCult: () => {},
 };
 
 export const CultsContext =
@@ -18,11 +22,14 @@ export const CultsContext =
 
 function CultsContextProvider({ children }: { children: React.ReactNode }) {
 	const [cults, setCults] = useState<DummyItem[]>([]);
+	const [selectedCult, setSelectedCult] = useState<DummyItem>();
 	return (
 		<CultsContext.Provider
 			value={{
-				cults: [],
-				setInputCults: setCults,
+				cults,
+				selectedCult,
+				setCults,
+				setSelectedCult,
 			}}>
 			{children}
 		</CultsContext.Provider>
