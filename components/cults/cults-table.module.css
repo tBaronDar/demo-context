@@ -2,3 +2,7 @@
 	grid-column: 2;
 	background-color: blueviolet;
 }
+
+.list {
+	list-style: none;
+}
