@@ -24,7 +24,7 @@ body {
 main {
 	height: 82%;
 	display: grid;
-	grid-template-columns: 25% auto 25%;
+	grid-template-columns: 15% auto 35%;
 	gap: 1rem;
 	padding: 1rem;
 	margin: 0;

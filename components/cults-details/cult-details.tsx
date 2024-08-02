@@ -16,7 +16,7 @@ function ContentDetails() {
 	return (
 		<div className={styles.master}>
 			<p>here goes the details of the selected thing</p>
-			{cultUrl && <iframe src={cultUrl} />}
+			{cultUrl && <iframe src={cultUrl} className={styles.details} />}
 		</div>
 	);
 }
