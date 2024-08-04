@@ -1,0 +1,9 @@
+.cult:hover {
+	scale: 1.05;
+	cursor: pointer;
+	background-color: blueviolet;
+}
+
+.focused {
+	box-shadow: 1px;
+}

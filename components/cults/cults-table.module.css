@@ -3,6 +3,10 @@
 	background-color: blueviolet;
 }
 
+.master h2 {
+	margin-bottom: 2rem;
+}
+
 .list {
 	list-style: none;
 }
