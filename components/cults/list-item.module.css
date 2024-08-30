@@ -1,9 +1,9 @@
 .cult:hover {
-	scale: 1.05;
-	cursor: pointer;
-	background-color: blueviolet;
+  scale: 1.05;
+  cursor: pointer;
+  background-color: var(--list-background-color);
 }
 
 .focused {
-	box-shadow: 1px;
+  box-shadow: 1px;
 }

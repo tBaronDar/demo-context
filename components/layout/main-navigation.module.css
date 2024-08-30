@@ -1,36 +1,36 @@
 .header {
-	height: 18%;
-	width: 100%;
-	background-color: darkgoldenrod;
+  height: 18%;
+  width: 100%;
+  background-color: var(--main-nav-background-color);
 }
 
 .navigation {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .navigation ul {
-	width: 100%;
-	list-style: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .navigation li {
-	color: greenyellow;
-	font-size: 1.5rem;
-	margin-left: 3rem;
-	margin-right: 1rem;
+  color: greenyellow;
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  margin-right: 1rem;
 }
 
 .logo {
-	color: aqua;
-	font-size: 2rem;
-	font-style: italic;
-	padding: 2rem;
+  color: aqua;
+  font-size: 2rem;
+  font-style: italic;
+  padding: 2rem;
 }

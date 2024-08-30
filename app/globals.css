@@ -1,5 +1,9 @@
 :root {
-  --background-color: #ff0000;
+  --main-background-color: #954cd9;
+  --list-background-color: #d94cad;
+  --file-tree-background-color: #c34cd9;
+  --cult-details-background-color: #b894d9;
+  --main-nav-background-color: #4c5fd9;
 }
 
 * {
@@ -18,7 +22,7 @@ body {
 
 body {
   color: black;
-  background: var(--background-color);
+  background: var(--main-background-color);
 }
 
 main {

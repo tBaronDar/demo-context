@@ -11,7 +11,9 @@ function MainNavigation() {
           Logo
         </Link>
         <ul>
-          <li>home</li>
+          <li>
+            <Link href={"/"}>Home</Link>
+          </li>
           <li>
             <Link href={"/with-MUI"}>With MUI</Link>
           </li>

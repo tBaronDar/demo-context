@@ -1,9 +1,9 @@
 .master {
-	grid-column: 3;
-	background-color: chartreuse;
+  grid-column: 3;
+  background-color: var(--cult-details-background-color);
 }
 
 .details {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
