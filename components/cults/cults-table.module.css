@@ -1,12 +1,14 @@
 .master {
-  grid-column: 2;
-  background-color: var(--list-background-color);
+	grid-area: 1/ 2 / span 2 / span 1;
+	background-color: var(--cult-details-background-color);
+	height: fit-content;
 }
 
 .master h2 {
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .list {
-  list-style: none;
+	list-style: none;
+	position: relative;
 }

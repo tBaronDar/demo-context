@@ -1,9 +1,27 @@
+.cult {
+	position: relative;
+	z-index: 1;
+	border-radius: 8px;
+}
+
 .cult:hover {
-  scale: 1.05;
-  cursor: pointer;
-  background-color: var(--list-background-color);
+	cursor: pointer;
+	background-color: var(--list-background-color);
+	scale: 1.2;
+
+	/* transform: scale(1.2); */
 }
 
 .focused {
-  box-shadow: 1px;
+	position: relative;
+	z-index: 1;
+	border-radius: 8px;
+	border: outset 0.25rem black;
+	border-radius: 8px;
+}
+
+.description {
+	padding: 0.25rem;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
 }

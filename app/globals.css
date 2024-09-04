@@ -1,48 +1,43 @@
 :root {
-  --main-background-color: #954cd9;
-  --list-background-color: #d94cad;
-  --file-tree-background-color: #c34cd9;
-  --cult-details-background-color: #b894d9;
-  --main-nav-background-color: #4c5fd9;
+	--main-background-color: #954cd9;
+	--list-background-color: #d94cad;
+	--intro-background-color: #c34cd9;
+	--cult-details-background-color: #b894d9;
+	--main-nav-background-color: #4c5fd9;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	margin: 0;
 }
 
 body {
-  max-width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  color: black;
-  background: var(--main-background-color);
+	max-width: 100vw;
+	/* height: 100vh; */
+	overflow-x: hidden;
+	padding-bottom: 2rem;
+	color: black;
+	background: var(--main-background-color);
 }
 
 main {
-  height: 82%;
-  display: grid;
-  grid-template-columns: 15% auto 35%;
-  gap: 1rem;
-  padding: 1rem;
-  margin: 0;
+	height: 82%;
+	display: grid;
+	grid-template-columns: 15% 40% auto;
+	gap: 1rem;
+	margin: 0;
+	padding: 1rem;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 div {
-  padding: 0.5rem;
+	padding: 0.5rem;
 }
 
 p {
-  text-wrap: pretty;
+	text-wrap: wrap;
 }

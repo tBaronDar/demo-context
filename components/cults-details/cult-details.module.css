@@ -1,9 +1,9 @@
 .master {
-  grid-column: 3;
-  background-color: var(--cult-details-background-color);
+	grid-area: 1/ 3 / span 2 / span 1;
+	background-color: var(--list-background-color);
 }
 
 .details {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }

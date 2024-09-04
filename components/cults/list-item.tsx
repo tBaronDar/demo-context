@@ -11,11 +11,10 @@ function ListItem({ inputItem }: { inputItem: DummyItem }) {
 	function cultClickHandler() {
 		setSelectedCult(inputItem);
 		console.log(selectedCult);
-	}
-
-	function focusHandler() {
 		setIsFocus(true);
 	}
+
+	function focusHandler() {}
 
 	let decoration = "cult";
 	if (isFocus) {
@@ -28,7 +27,7 @@ function ListItem({ inputItem }: { inputItem: DummyItem }) {
 			className={styles[decoration]}
 			onFocus={focusHandler}>
 			<h3>{inputItem.name}</h3>
-			<p>{inputItem.description}</p>
+			<p className={styles.description}>{inputItem.description}</p>
 		</li>
 	);
 }

@@ -1,0 +1,4 @@
+.master {
+	grid-area: 2/ 1 / span 1 / span 1;
+	background-color: var(--intro-background-color);
+}

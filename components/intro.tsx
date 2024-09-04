@@ -1,8 +1,8 @@
 import React from "react";
 
-import styles from "./file-tree.module.css";
+import styles from "./intro.module.css";
 
-function FileTree() {
+function Intro() {
 	return (
 		<div className={styles.master}>
 			<p>here goes the file selection</p>
@@ -10,4 +10,4 @@ function FileTree() {
 	);
 }
 
-export default FileTree;
+export default Intro;

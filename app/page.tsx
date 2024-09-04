@@ -1,16 +1,18 @@
 "use client";
+import Ads from "@/components/ads";
 import ContentDetails from "@/components/cults-details/cult-details";
 import ContentTable from "@/components/cults/cults-table";
-import FileTree from "@/components/file-tree";
+import Intro from "@/components/intro";
 import CultsContextProvider from "@/store/cults-context";
 
-export default function Home() {
+export default function HomePage() {
 	return (
 		<main>
-			<FileTree />
 			<CultsContextProvider>
+				<Intro />
 				<ContentTable />
 				<ContentDetails />
+				<Ads />
 			</CultsContextProvider>
 		</main>
 	);
