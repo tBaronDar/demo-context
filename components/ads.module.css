@@ -1,4 +1,13 @@
 .master {
 	grid-area: 2/ 1 / span 1 / span 1;
 	background-color: var(--intro-background-color);
+	display: flex;
+	align-items: center;
+	justify-items: center;
+}
+
+.text {
+	padding: 0.75rem;
+	text-wrap: balance;
+	text-align: center;
 }

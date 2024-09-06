@@ -1,0 +1,6 @@
+.master {
+	display: grid;
+	grid-template-columns: 15% 40% auto;
+	grid-template-rows: 50% 50%;
+	gap: 1rem;
+}

@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useContext, useEffect, useState } from "react";
-import { DUMMY_ITEMS, DummyItem } from "@/data/data";
+import React, { useContext, useEffect } from "react";
+import { DUMMY_ITEMS } from "@/data/data";
 
 import styles from "@/components/cults/cults-table.module.css";
 import ListItem from "./list-item";

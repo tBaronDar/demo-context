@@ -5,15 +5,17 @@ import ContentTable from "@/components/cults/cults-table";
 import Intro from "@/components/intro";
 import CultsContextProvider from "@/store/cults-context";
 
+import styles from "./page.module.css";
+
 export default function HomePage() {
 	return (
-		<main>
+		<main className={styles.master}>
+			<Intro />
 			<CultsContextProvider>
-				<Intro />
 				<ContentTable />
 				<ContentDetails />
-				<Ads />
 			</CultsContextProvider>
+			<Ads />
 		</main>
 	);
 }

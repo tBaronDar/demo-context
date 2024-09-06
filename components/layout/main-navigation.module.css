@@ -28,6 +28,10 @@
 	margin-right: 1rem;
 }
 
+.navigation a {
+	text-decoration: none;
+}
+
 .logo {
 	font-size: 2rem;
 	font-style: italic;

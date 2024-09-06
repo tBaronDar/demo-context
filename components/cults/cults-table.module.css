@@ -1,7 +1,6 @@
 .master {
 	grid-area: 1/ 2 / span 2 / span 1;
 	background-color: var(--cult-details-background-color);
-	height: fit-content;
 }
 
 .master h2 {

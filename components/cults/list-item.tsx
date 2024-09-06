@@ -1,12 +1,11 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { DummyItem } from "@/data/data";
 import { CultsContext } from "@/store/cults-context";
 
 import styles from "@/components/cults/list-item.module.css";
 
 function ListItem({ inputItem }: { inputItem: DummyItem }) {
-	const { setSelectedCult, selectedCult, cults, setCults } =
-		useContext(CultsContext);
+	const { cults, setCults } = useContext(CultsContext);
 
 	function cultClickHandler(selection: number | undefined) {
 		console.log(selection);
