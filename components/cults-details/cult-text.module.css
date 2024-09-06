@@ -1,0 +1,9 @@
+.master {
+	grid-area: 1/ 2 / span 2 / span 1;
+	background-color: var(--list-background-color);
+}
+
+.details {
+	width: 100%;
+	height: 100%;
+}

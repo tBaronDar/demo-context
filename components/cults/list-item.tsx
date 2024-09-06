@@ -8,8 +8,6 @@ function ListItem({ inputItem }: { inputItem: DummyItem }) {
 	const { cults, setCults } = useContext(CultsContext);
 
 	function cultClickHandler(selection: number | undefined) {
-		console.log(selection);
-
 		const clickedCults = cults.map((item) =>
 			selection === item.id
 				? { ...item, isSelected: true }
@@ -17,7 +15,6 @@ function ListItem({ inputItem }: { inputItem: DummyItem }) {
 		);
 
 		setCults(clickedCults);
-		console.log(cults);
 	}
 
 	let decoration = "cult";

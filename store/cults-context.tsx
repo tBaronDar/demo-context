@@ -1,7 +1,8 @@
 "use client";
 
 import { DummyItem } from "@/data/data";
-import React, { createContext, useState } from "react";
+
+import React, { createContext, useState, useEffect } from "react";
 
 interface CultsContextInterface {
 	cults: DummyItem[] | [];
