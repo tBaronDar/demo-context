@@ -2,12 +2,15 @@
 	position: relative;
 	z-index: 1;
 	border-radius: 8px;
+	padding: 1rem;
 }
 
 .cult:hover {
 	cursor: pointer;
-	background-color: var(--list-background-color);
-	scale: 1.2;
+	background-color: var(--list-item-highlight);
+	scale: 1.1;
+	padding: 1rem;
+	box-shadow: 6px 6px 6px 2px var(--shadow-highlight);
 
 	/* transform: scale(1.2); */
 }
@@ -21,7 +24,6 @@
 }
 
 .description {
-	padding: 0.25rem;
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
 }

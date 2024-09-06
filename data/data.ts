@@ -3,6 +3,7 @@ export interface DummyItem {
 	details: string;
 	description: string;
 	name: string;
+	isSelected: boolean;
 }
 
 export const DUMMY_ITEMS: DummyItem[] = [
@@ -12,6 +13,7 @@ export const DUMMY_ITEMS: DummyItem[] = [
 		description:
 			"Led by Reverend Jim Jones, this cult is known for the Jonestown Massacre in 1978, where over 900 followers died in a mass murder-suicide.",
 		name: "The People’s Temple",
+		isSelected: false,
 	},
 	{
 		id: 2,
@@ -19,6 +21,7 @@ export const DUMMY_ITEMS: DummyItem[] = [
 		description:
 			"Founded by Keith Raniere, NXIVM was accused of running an abusive sex cult.Female members were branded, used as sex slaves, and blackmailed. Actress Allison Mack was also implicated in recruiting members.",
 		name: "NXIVM",
+		isSelected: false,
 	},
 	{
 		id: 3,
@@ -27,6 +30,7 @@ export const DUMMY_ITEMS: DummyItem[] = [
 		description:
 			"Led by Warren Jeffs, this polygamist cult faced allegations of child abuse and forced marriages.",
 		name: "The Fundamentalist Church of Jesus Christ of Latter-Day Saints",
+		isSelected: false,
 	},
 	{
 		id: 4,
@@ -34,6 +38,7 @@ export const DUMMY_ITEMS: DummyItem[] = [
 		description:
 			"A Japanese cult led by Shoko Asahara, responsible for the 1995 Tokyo subway sarin gas attack.",
 		name: "Angel’s Landing",
+		isSelected: false,
 	},
 	{
 		id: 5,
@@ -41,5 +46,6 @@ export const DUMMY_ITEMS: DummyItem[] = [
 		description:
 			"Founded by Bhagwan Shree Rajneesh, this cult established a commune in Oregon. They engaged in criminal activities, including poisoning salad bars in a nearby town.",
 		name: "Rajneeshpuram",
+		isSelected: false,
 	},
 ];

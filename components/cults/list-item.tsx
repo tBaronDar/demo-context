@@ -5,27 +5,31 @@ import { CultsContext } from "@/store/cults-context";
 import styles from "@/components/cults/list-item.module.css";
 
 function ListItem({ inputItem }: { inputItem: DummyItem }) {
-	const { setSelectedCult, selectedCult } = useContext(CultsContext);
-	const [isFocus, setIsFocus] = useState(false);
+	const { setSelectedCult, selectedCult, cults, setCults } =
+		useContext(CultsContext);
 
-	function cultClickHandler() {
-		setSelectedCult(inputItem);
-		console.log(selectedCult);
-		setIsFocus(true);
+	function cultClickHandler(selection: number | undefined) {
+		console.log(selection);
+
+		const clickedCults = cults.map((item) =>
+			selection === item.id
+				? { ...item, isSelected: true }
+				: { ...item, isSelected: false }
+		);
+
+		setCults(clickedCults);
+		console.log(cults);
 	}
 
-	function focusHandler() {}
-
 	let decoration = "cult";
-	if (isFocus) {
+	if (inputItem.isSelected) {
 		decoration = "focused";
 	}
 
 	return (
 		<li
-			onClick={cultClickHandler}
-			className={styles[decoration]}
-			onFocus={focusHandler}>
+			onClick={cultClickHandler.bind(null, inputItem.id)}
+			className={styles[decoration]}>
 			<h3>{inputItem.name}</h3>
 			<p className={styles.description}>{inputItem.description}</p>
 		</li>

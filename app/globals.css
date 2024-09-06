@@ -1,9 +1,17 @@
 :root {
-	--main-background-color: #954cd9;
-	--list-background-color: #d94cad;
-	--intro-background-color: #c34cd9;
-	--cult-details-background-color: #b894d9;
-	--main-nav-background-color: #4c5fd9;
+	--main-background-color: #f1faee;
+	--shadow-color: #85acb7;
+
+	--list-background-color: #a8dadc;
+	--list-item-highlight: #f84963;
+	--shadow-highlight: #d6305c;
+
+	--intro-background-color: #a8dadc;
+	--cult-details-background-color: #a8dadc;
+
+	--main-nav-background-color: #457b9d;
+
+	color: #1d3557;
 }
 
 * {
@@ -16,7 +24,7 @@ body {
 	/* height: 100vh; */
 	overflow-x: hidden;
 	padding-bottom: 2rem;
-	color: black;
+
 	background: var(--main-background-color);
 }
 
@@ -36,6 +44,8 @@ a {
 
 div {
 	padding: 0.5rem;
+	border-radius: 4px;
+	box-shadow: 6px 6px 6px 2px var(--shadow-color);
 }
 
 p {

@@ -7,7 +7,7 @@ interface CultsContextInterface {
 	cults: DummyItem[] | [];
 	selectedCult: DummyItem | undefined;
 	setCults: (inputCults: DummyItem[]) => void;
-	setSelectedCult: (inputCults: DummyItem) => void;
+	setSelectedCult: (inputCults: DummyItem | undefined) => void;
 }
 
 const defaultContext: CultsContextInterface = {
