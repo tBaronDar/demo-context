@@ -1,5 +1,13 @@
-.master {
+.master-btm-left {
 	grid-area: 2/ 1 / span 1 / span 1;
+	background-color: var(--intro-background-color);
+	display: flex;
+	align-items: center;
+	justify-items: center;
+}
+
+.master-top-right {
+	grid-area: 1/ 3 / span 1 / span 1;
 	background-color: var(--intro-background-color);
 	display: flex;
 	align-items: center;

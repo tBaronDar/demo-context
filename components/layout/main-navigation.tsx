@@ -1,9 +1,13 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
 
 import styles from "./main-navigation.module.css";
 import Link from "next/link";
+import { CultsContext } from "@/store/cults-context";
 
 function MainNavigation() {
+	const { cults } = useContext(CultsContext);
+	const selectedCult = cults.find((item) => item.isSelected === true);
 	return (
 		<header className={styles.header}>
 			<nav className={styles.navigation}>
@@ -14,9 +18,17 @@ function MainNavigation() {
 					<li>
 						<Link href={"/"}>Home</Link>
 					</li>
-					<li>
-						<Link href={"/more-details"}>More Details</Link>
-					</li>
+					{/* Check if a selected cult exists and change the output */}
+					{selectedCult && (
+						<li>
+							<Link href={"/more-details"}>More Details</Link>
+						</li>
+					)}
+					{!selectedCult && (
+						<li>
+							<Link href={"/"}>No Selection</Link>
+						</li>
+					)}
 				</ul>
 			</nav>
 		</header>

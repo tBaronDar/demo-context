@@ -19,7 +19,7 @@ function ContentTable() {
 
 	return (
 		<div className={styles.master}>
-			<h2>Here goes the main item list</h2>
+			<h2>These are the most notorious Cults in human hystory.</h2>
 			<ul className={styles.list}>
 				{ctx.cults.map((item) => (
 					<ListItem inputItem={item} key={item.id} />

@@ -2,16 +2,17 @@
 
 import React from "react";
 import Ads from "@/components/ads";
-import CultsContextProvider from "@/store/cults-context";
 
 import styles from "./page.module.css";
 import CultText from "@/components/cults-details/cult-text";
+import Intro from "@/components/intro";
 
 function DetailsPage() {
 	return (
 		<main className={styles.master}>
 			<CultText />
-			<Ads />
+			<Ads position="master-top-right" />
+			<Intro position="master-top-left" />
 		</main>
 	);
 }

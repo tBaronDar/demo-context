@@ -1,5 +1,18 @@
-.master {
+.master-top-left {
 	grid-area: 1/ 1 / span 1 / span 1;
+	background-color: var(--intro-background-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+	text-align: center;
+	text-wrap: balance;
+	max-height: max-content;
+}
+
+.master-top-right {
+	grid-area: 1/ 3 / span 1 / span 1;
 	background-color: var(--intro-background-color);
 	display: flex;
 	flex-direction: column;
